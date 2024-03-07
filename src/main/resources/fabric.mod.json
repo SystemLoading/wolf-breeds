@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "wolf-breeds",
+	"version": "${version}",
+	"name": "Wolf Breeds",
+	"description": "A mod that introduces data-driven wolf breeding, based on the Wolf variants from 24w10a.",
+	"authors": [
+		"SystemLoading"
+	],
+	"contact": {
+		"sources": "https://github.com/SystemLoading"
+	},
+	"license": "MIT",
+	"icon": "assets/wolf-breeds/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.systemloading.wolfbreed.WolfBreeds"
+		],
+		"fabric-datagen": [
+			"com.systemloading.wolfbreed.WolfBreedsDataGenerator"
+		]
+	},
+	"mixins": [
+		"wolf-breeds.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
